@@ -1,0 +1,22 @@
+{
+  "name": "lukelarsen.com",
+  "version": "1.0.0",
+  "description": "Website for lukelarsen.com",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukelarsen/lukelarsen.com.git"
+  },
+  "author": "lukelarsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukelarsen/lukelarsen.com/issues"
+  },
+  "homepage": "https://github.com/lukelarsen/lukelarsen.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
