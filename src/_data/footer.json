@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "text": "Github",
+            "url": "https://github.com/lukelarsen"
+        },
+        {
+            "text": "Twitter",
+            "url": "https://twitter.com/lukelarsen"
+        },
+        {
+            "text": "RSS Feed",
+            "url": "/feed.xml"
+        },
+        {
+            "text": "Email",
+            "url": "mailto:luke@lukelarsen.com"
+        }
+    ]
+}

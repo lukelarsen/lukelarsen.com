@@ -1,0 +1,14 @@
+<footer>
+    <nav
+        class="nav site-foot__nav"
+        aria-label="Footer"
+    >
+        <ul class="nav__list">
+            {% for item in footer.items %}
+            <li>
+                <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</footer>

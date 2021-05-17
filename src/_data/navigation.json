@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "text": "Uplynk",
+            "url": "/uplynk/"
+        },
+        {
+            "text": "Lightning League",
+            "url": "/lightning-league/"
+        },
+        {
+            "text": "Bindable",
+            "url": "/bindable/"
+        },
+        {
+            "text": "About",
+            "url": "/about/"
+        },
+        {
+            "text": "Blog",
+            "url": "/blog/"
+        },
+        {
+            "text": "Pickleball",
+            "url": "/pickleball/"
+        }
+    ]
+}
