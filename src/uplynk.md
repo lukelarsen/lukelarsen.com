@@ -4,7 +4,7 @@ layout: 'layouts/default.html'
 intro:
     main: 'Uplynk'
     summary: 'A dashboard for running live events.'
-    image: 'images/page-headers/uplynk.jpg'
+    image: './src/images/page-headers/home.jpg'
     imageAlt: 'Uplynk Live Events Dashboard'
 ---
 

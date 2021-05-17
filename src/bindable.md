@@ -4,7 +4,7 @@ layout: 'layouts/default.html'
 intro:
     main: 'Bindable'
     summary: 'A themeable design system.'
-    image: 'images/page-headers/bindable.jpg'
+    image: './src/images/page-headers/home.jpg'
     imageAlt: 'Bindable Design System'
 ---
 

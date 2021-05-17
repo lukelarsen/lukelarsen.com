@@ -5,8 +5,9 @@ metaDesc: 'I am the meta desc for the home page.'
 intro:
     main: 'Luke Larsen'
     summary: 'UX + Front End'
-    image: 'images/page-headers/home.jpg'
+    image: './src/images/page-headers/home.jpg'
     imageAlt: 'Luke Larsen UX + Front End'
 ---
 
 Home Page Content Here
+{% image "./src/images/page-headers/home.jpg", "tennis picture", "100vw" %}

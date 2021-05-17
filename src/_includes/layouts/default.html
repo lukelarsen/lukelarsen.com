@@ -2,9 +2,6 @@
 {% block content %}
 <h1>{{ intro.main }}</h1>
 <h4>{{ intro.summary }}</h4>
-<img
-    src="{{ intro.image }}"
-    alt="{{ intro.imageAlt }}"
->
+{% headerimage intro.image, intro.imageAlt, "100vw" %}
 {{ content | safe }}
 {% endblock %}
