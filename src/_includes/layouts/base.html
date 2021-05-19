@@ -21,8 +21,12 @@
     {% include "styles/styles.css" %}
     {% endset %}
     <style>
-        /* prettier-ignore */
         {{ css | cssmin | safe }}
+    </style>
+    <style>
+        :root{
+            --color-page: {{ color }};
+        }
     </style>
 </head>
 
@@ -31,7 +35,9 @@
     <main
         tabindex="-1"
         id="main-content"
-    >{% block content %}{% endblock %}</main>
+    >
+        {% block content %}{% endblock %}
+    </main>
     {% include "partials/site-foot.html" %}
 </body>
 

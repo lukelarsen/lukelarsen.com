@@ -6,29 +6,62 @@
 </a>
 <header
     role="banner"
-    class="site-head"
+    class="nav-header"
 >
-    <div class="wrapper">
-        <div class="site-head__inner">
-            <a
-                href="/"
-                aria-label="{{ site.name }} - home"
-                class="site-head__brand"
+    <a
+        href="/"
+        aria-label="{{ site.name }} - home"
+        class="logo"
+    >
+        <svg
+            width="28"
+            height="25"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <g
+                fill="none"
+                fill-rule="evenodd"
             >
-                LL
-            </a>
-            <nav
-                class="nav site-head__nav"
-                aria-label="Primary"
-            >
-                <ul class="nav__list">
-                    {% for item in navigation.items %}
-                    <li>
-                        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-    </div>
+                <path
+                    fill="#698A9D"
+                    d="M0 21h28v4H0z"
+                />
+                <g fill="#FFF">
+                    <path d="M0 0h4v17H0z" />
+                    <path d="M2 13h10v4H2z" />
+                </g>
+                <g fill="#FFF">
+                    <path d="M16 0h4v17h-4z" />
+                    <path d="M18 13h10v4H18z" />
+                </g>
+            </g>
+        </svg>
+    </a>
+    <nav
+        class="site-navigation  cluster"
+        aria-label="Primary"
+    >
+        
+        <input
+            id="toggle-mobile-nav"
+            type="checkbox"
+        />
+        <ul class="main-nav">
+            {% for item in navigation.items %}
+            <li>
+                <a
+                    href="{{ item.url }}"
+                    {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                >{{ item.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <label
+            class="mobile-trigger"
+            for="toggle-mobile-nav"
+            aria-label="Primary"
+        >
+            <span></span>
+        </label>
+    </nav>
 </header>
