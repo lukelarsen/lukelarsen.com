@@ -1,5 +1,7 @@
+// Plugins
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const Image = require('@11ty/eleventy-img');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
@@ -48,6 +50,9 @@ module.exports = (config) => {
     // Add Image Shortcodes
     config.addNunjucksAsyncShortcode("headerimage", imageHeaderShortcode);
     config.addNunjucksAsyncShortcode("image", imageShortcode);
+
+    // Add Plugins
+    config.addPlugin(syntaxHighlight);
 
     // Add filters
     config.addFilter('dateFilter', dateFilter);

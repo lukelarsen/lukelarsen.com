@@ -1,6 +1,8 @@
 ---
 title: 'Tag Archive'
 layout: 'layouts/feed.html'
+metaDesc: 'I am the meta desc for the tags page.'
+color: 'var(--color-blog)'
 pagination:
     data: collections
     size: 1
