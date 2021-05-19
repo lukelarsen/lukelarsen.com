@@ -58,4 +58,9 @@ module.exports = {
 
         return filteredItems;
     },
+
+    currentYear() {
+        const today = new Date();
+        return today.getFullYear();
+    },
 };

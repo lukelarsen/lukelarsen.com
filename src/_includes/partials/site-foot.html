@@ -1,14 +1,50 @@
-<footer>
-    <nav
-        class="nav site-foot__nav"
-        aria-label="Footer"
-    >
-        <ul class="nav__list">
-            {% for item in footer.items %}
-            <li>
-                <a href="{{ item.url }}">{{ item.text }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
+<footer class="scaffold-footer  cluster  cluster--split">
+    <div>
+        <div class="cluster">
+            <div>
+                <a
+                    href="/"
+                    aria-label="{{ site.name }} - home"
+                    class="logo"
+                >
+                    <svg
+                        width="28"
+                        height="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g
+                            fill="none"
+                            fill-rule="evenodd"
+                        >
+                            <path
+                                fill="#698A9D"
+                                d="M0 21h28v4H0z"
+                            />
+                            <g fill="#FFF">
+                                <path d="M0 0h4v17H0z" />
+                                <path d="M2 13h10v4H2z" />
+                            </g>
+                            <g fill="#FFF">
+                                <path d="M16 0h4v17h-4z" />
+                                <path d="M18 13h10v4H18z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <p>Copyright {{ helpers.currentYear() }}</p>
+            </div>
+        </div>
+        <nav
+            class="cluster"
+            aria-label="Footer"
+        >
+            <ul>
+                {% for item in footer.items %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
 </footer>
