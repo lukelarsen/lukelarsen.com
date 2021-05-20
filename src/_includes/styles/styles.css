@@ -591,6 +591,42 @@ p img {
     object-fit: cover;
 }
 
+.more{
+    position: absolute;
+    bottom: var(--s3);
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration-color: transparent;
+}
+
+.more span {
+    top: 3px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px
+}
+.more span::after,
+.more span::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 7px;
+    top: 3px
+}
+.more span::after {
+    top: 8px
+}
+
 
 /**
  * ^Cluster
@@ -838,7 +874,6 @@ p img {
 }
 
 /* End Animate to X */
-
 
 
 @media only screen and (max-width: 768px) {

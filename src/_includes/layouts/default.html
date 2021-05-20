@@ -5,9 +5,20 @@
         <h1>{{ intro.main }}</h1>
         <h4>{{ intro.summary }}</h4>
     </div>
+    <a
+        href="#main-content"
+        class="more"
+    >
+        <span></span>
+        More Info
+        <span></span>
+    </a>
     {% headerimage intro.image, intro.imageAlt, "100vw" %}
 </div>
-<div class="wrapper">
+<div
+    id="main-content"
+    class="wrapper"
+>
     {{ content | safe }}
 </div>
 {% endblock %}
