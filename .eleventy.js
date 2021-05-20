@@ -64,6 +64,7 @@ module.exports = (config) => {
     // Set directories to pass through to the dist folder
     config.addPassthroughCopy({'./src/images/processed': 'img'});
     config.addPassthroughCopy('./src/fonts/');
+    config.addPassthroughCopy('./src/javascript/');
 
     // Returns a collection of blog posts in reverse date order
     config.addCollection('blog', (collection) => {
