@@ -64,7 +64,9 @@ module.exports = (config) => {
     // Set directories to pass through to the dist folder
     config.addPassthroughCopy({'./src/images/processed': 'img'});
     config.addPassthroughCopy('./src/fonts/');
-    config.addPassthroughCopy('./src/javascript/');
+    config.addPassthroughCopy({'./node_modules/swup/dist/swup.min.js': 'javascript/swup.min.js'});
+    config.addPassthroughCopy({'./node_modules/@swup/js-plugin/dist/SwupJsPlugin.min.js': 'javascript/SwupJsPlugin.min.js'});
+    config.addPassthroughCopy({'./node_modules/gsap/dist/gsap.min.js': 'javascript/gsap.min.js'});
 
     // Returns a collection of blog posts in reverse date order
     config.addCollection('blog', (collection) => {

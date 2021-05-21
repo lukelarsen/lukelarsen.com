@@ -6,7 +6,7 @@ color: 'var(--color-project2)'
 intro:
     main: 'Lightning League'
     summary: 'A web app for running pickleball leagues.'
-    image: './src/images/page-headers/home.jpg'
+    image: './src/images/page-headers/lightning-league.jpg'
     imageAlt: 'Lightning League Web App'
 ---
 

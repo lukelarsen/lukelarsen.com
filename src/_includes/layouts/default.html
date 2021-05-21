@@ -1,13 +1,19 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<div id="swup" class="hero  transition-fade">
-    <div class="frame frame-left"></div>
-    <div class="frame frame-right"></div>
-    <div class="frame frame-top"></div>
-    <div class="frame frame-bottom"></div>
+<div class="hero">
+    <div class="overlay">
+        <div class="overlay__current-color"></div>
+        <div class="overlay__sub1-color"></div>
+        <div class="overlay__sub2-color"></div>
+        <div class="overlay__next-color"></div>
+    </div>
+    <div class="frame  frame-left"></div>
+    <div class="frame  frame-right"></div>
+    <div class="frame  frame-top"></div>
+    <div class="frame  frame-bottom"></div>
     <div class="hero-text">
-        <h1>{{ intro.main }}</h1>
-        <h4>{{ intro.summary }}</h4>
+        <h1 class="hero-text__main">{{ intro.main }}</h1>
+        <h4 class="hero-text__sub">{{ intro.summary }}</h4>
     </div>
     <a
         href="#main-content"
