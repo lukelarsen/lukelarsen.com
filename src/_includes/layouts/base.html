@@ -45,6 +45,7 @@
 </body>
 <script src="/javascript/swup.min.js"></script>
 <script src="/javascript/SwupJsPlugin.min.js"></script>
+<script src="/javascript/SwupPreloadPlugin.min.js"></script>
 <script src="/javascript/gsap.min.js"></script>
 <script>
     var easingIn = 'power1.in';
@@ -95,7 +96,10 @@
         }
     }];
     var swup = new Swup({
-        plugins: [new SwupJsPlugin(options)]
+        plugins: [
+            new SwupJsPlugin(options),
+            new SwupPreloadPlugin(options),
+        ]
     });
 </script>
 

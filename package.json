@@ -22,6 +22,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "@swup/js-plugin": "^1.0.4",
+    "@swup/preload-plugin": "^1.0.3",
     "clean-css": "^5.1.2",
     "gsap": "^3.6.1",
     "moment": "^2.29.1",

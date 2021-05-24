@@ -51,6 +51,7 @@
             <li>
                 <a
                     href="{{ item.url }}"
+                    data-swup-preload
                     {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
                 >{{ item.text }}</a>
             </li>

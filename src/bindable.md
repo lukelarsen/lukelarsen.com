@@ -6,7 +6,7 @@ color: 'var(--color-project3)'
 intro:
     main: 'Bindable'
     summary: 'A themeable design system.'
-    image: './src/images/page-headers/home.jpg'
+    image: './src/images/page-headers/bindable.jpg'
     imageAlt: 'Bindable Design System'
 ---
 

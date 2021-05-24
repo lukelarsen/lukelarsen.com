@@ -11,7 +11,7 @@ const CleanCSS = require('clean-css');
 // Image Header Shortcode
 async function imageHeaderShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
-        widths: [600, 900],
+        widths: [300, 600, 900, 1200, 1800, 2000, 3500],
         formats: ['webp', 'jpg'],
         outputDir: "./src/images/processed",
     });
@@ -29,7 +29,7 @@ async function imageHeaderShortcode(src, alt, sizes) {
 // Regular Image Shortcode
 async function imageShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
-        widths: [300, 600],
+        widths: [300, 600, 900, 1200],
         formats: ['webp', 'jpg'],
         outputDir: "./src/images/processed",
     });
@@ -66,6 +66,7 @@ module.exports = (config) => {
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy({'./node_modules/swup/dist/swup.min.js': 'javascript/swup.min.js'});
     config.addPassthroughCopy({'./node_modules/@swup/js-plugin/dist/SwupJsPlugin.min.js': 'javascript/SwupJsPlugin.min.js'});
+    config.addPassthroughCopy({'./node_modules/@swup/preload-plugin/dist/SwupPreloadPlugin.min.js': 'javascript/SwupPreloadPlugin.min.js'});
     config.addPassthroughCopy({'./node_modules/gsap/dist/gsap.min.js': 'javascript/gsap.min.js'});
 
     // Returns a collection of blog posts in reverse date order
