@@ -1,6 +1,6 @@
 ---
 title: 'Tag Archive'
-layout: 'layouts/feed.html'
+layout: 'layouts/tags.html'
 metaDesc: 'I am the meta desc for the tags page.'
 color: 'var(--color-blog)'
 pagination:
@@ -8,5 +8,5 @@ pagination:
     size: 1
     alias: tag
     filter: ['all', 'nav', 'blog', 'work', 'featuredWork', 'people', 'rss']
-permalink: '/tag/{{ tag | slug }}/'
+permalink: '/blog/tag/{{ tag | slug }}/'
 ---

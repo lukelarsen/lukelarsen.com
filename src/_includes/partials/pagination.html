@@ -1,9 +1,9 @@
 {# Only renders this section if there are links to render #}
 {% if pagination.href.next or pagination.href.previous %}
 <footer>
-    <div>
+    <div class="cluster">
         <nav
-            class="pagination__inner"
+            class="pagination"
             aria-label="Pagination links"
         >
             {% if pagination.href.previous %}

@@ -1,5 +1,5 @@
 ---
-title: 'Post02'
+title: 'Post07'
 date: '2020-01-02'
 tags: ['Culture', 'Design Thinking']
 color: 'var(--color-blog)'

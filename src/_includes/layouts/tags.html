@@ -11,7 +11,7 @@
 {% endif %}
 
 {% block content %}
-<div class="hero page-blog">
+<div class="hero page-tags">
     <div class="overlay">
         <div class="overlay__current-color"></div>
         <div class="overlay__sub1-color"></div>
@@ -26,8 +26,8 @@
         class="hero-text"
         id="main-content"
     >
-        <h1 class="hero-text__main">Blog</h1>
-        <h4 class="hero-text__sub">Blog Summary</h4>
+        <h1 class="hero-text__main">Tags</h1>
+        <h4 class="hero-text__sub">Posts filtered by the '{{ tag }}' tag</h4>
         {% include "partials/blog-post-list.html" %}
         {# If we leave pagination in for tags, the next and prev links will
             link to tags and be rather confusing, so don't render in that situation #}

@@ -7,31 +7,64 @@
 
 {# Render post date and any tags that this post has been filed under #}
 {% set pageHeaderSummary %}
-    <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-    {% if tags %}
-    <p
-        class="visually-hidden"
-        id="tags-desc"
-    >
-        Tags that this post has been filed under.
-    </p>
+<time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+{% if tags %}
+<p
+    class="visually-hidden"
+    id="tags-desc"
+>
+    Tags that this post has been filed under.
+</p>
+<nav class="cluster  cluster--center">
     <ul
         class="tags-list"
         aria-describedby="tags-desc"
     >
         {% for tag in tags %}
         <li>
-            <a href="/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+            <a href="/blog/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
         </li>
         {% endfor %}
     </ul>
-    {% endif %}
+</nav>
+{% endif %}
 {% endset %}
 
 {% block content %}
-<article>
-    {% include "partials/blog-page-header.html" %}
+<div class="overlay">
+    <div class="overlay__current-color"></div>
+    <div class="overlay__sub1-color"></div>
+    <div class="overlay__sub2-color"></div>
+    <div class="overlay__next-color"></div>
+</div>
+<div class="hero  hero-post-single">
+    <div class="frame  frame-left"></div>
+    <div class="frame  frame-right"></div>
+    <div class="frame  frame-top"></div>
+    <div class="frame  frame-bottom"></div>
+    <div
+        class="hero-text"
+        id="main-content"
+    >
+        <h1
+            class="hero-text__main"
+            data-highlight="primary"
+        >
+            {{ pageHeaderTitle }}
+        </h1>
+        {% if pageHeaderSummary %}
+        <div class="page-header__summary">
+            {{ pageHeaderSummary | safe }}
+        </div>
+        {% endif %}
+    </div>
+    {% headerimage './src/images/page-headers/uplynk.jpg', 'blog', "100vw" %}
+</div>
 
+<article
+    id="main-content"
+    class="wrapper"
+>
     <div>
         {{ content | safe }}
     </div>
@@ -39,8 +72,20 @@
     {% if recommendedPosts %}
     <footer>
         {% set postListItems = recommendedPosts %}
-        {% set postListHeadline = 'More from the blog' %}
-        {% include "partials/blog-post-list.html" %}
+        <div>
+            <h3 data-highlight="primary">
+                More from the blog
+            </h3>
+            <ul>
+                {% for item in postListItems %}
+                <li>
+                    <a href="{{ item.url }}">
+                        {{ item.data.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </footer>
     {% endif %}
 </article>

@@ -23,24 +23,21 @@
     <style>
         {{ css | cssmin | safe }}
     </style>
-    
+
 </head>
 
 <body>
     <div id="swup">
-
-    <style>
-        :root{
-            --color-page: {{ color }};
-        }
-    </style>
-    {% include "partials/site-head.html" %}
-    <main
-        tabindex="-1"
-    >
-        {% block content %}{% endblock %}
-    </main>
-</div>
+        <style>
+            :root{
+                --color-page: {{ color }};
+            }
+        </style>
+        {% include "partials/site-head.html" %}
+        <main tabindex="-1">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
     {% include "partials/site-foot.html" %}
 </body>
 <script src="/javascript/swup.min.js"></script>
@@ -50,7 +47,7 @@
 <script>
     var easingIn = 'power1.in';
     var easingOut = 'power2.out';
-    var duration = 0.75;
+    var duration = 0.8;
     var delay = 0.25;
     var colors = {
         '/': '#698A9D',
@@ -62,39 +59,86 @@
         '/pickleball/': '#000',
     }
 
-    var options = [{
-        from: '(.*)', // meaning any
-        to: '(.*)', // meaning any
-        out: function(next, data){
-            document.querySelector('.overlay').style.right = '-200%';
-            document.querySelector('.overlay__current-color').style.background = colors[data.transition.from];
-            document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
+    var options = [
+        {
+            from: '(.*)', // meaning any
+            to: '(.*)', // meaning any
+            out: function (next, data) {
+                var isBlog = data.transition.from.indexOf('/blog/') === 0;
+                var from = isBlog ? '/blog/' : data.transition.from;
+                document.querySelector('.overlay').style.right = '-200%';
+                document.querySelector('.overlay__current-color').style.background = colors[from];
+                document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
 
-            gsap.to('.overlay', {right: '-20%', duration: duration, ease: easingIn});
-            
-            setTimeout(next, 750);
+                gsap.to('.overlay', {
+                    right: '-20%',
+                    duration: duration,
+                    ease: easingIn
+                });
+
+                setTimeout(next, 800);
+            },
+            in: function (next, data) {
+                var isBlog = data.transition.from.indexOf('/blog/') === 0;
+                var from = isBlog ? '/blog/' : data.transition.from;
+
+                document.querySelector('.frame-left').style.background = colors[data.transition.to];
+                document.querySelector('.frame-right').style.background = colors[data.transition.to];
+
+                document.querySelector('.overlay').style.right = '-20%';
+                document.querySelector('.overlay__current-color').style.background = colors[from];
+                document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
+
+                document.querySelector('.hero-text__main').style.marginLeft = '30px';
+                document.querySelector('.hero-text__sub').style.marginLeft = '30px';
+                document.querySelector('.hero-text__main').style.opacity = 0;
+                document.querySelector('.hero-text__sub').style.opacity = 0;
+
+                gsap.to('.overlay', {
+                    right: '100%',
+                    duration: duration,
+                    ease: easingOut
+                });
+
+                gsap.to('.hero-text__main', {
+                    marginLeft: '0%',
+                    opacity: 1,
+                    duration: duration,
+                    ease: 'power.inOut'
+                });
+                gsap.to('.hero-text__sub', {
+                    marginLeft: '0%',
+                    opacity: 1,
+                    duration: duration,
+                    ease: 'power.inOut'
+                });
+
+                setTimeout(next, 800);
+            }
         },
-        in: function(next, data){
-            document.querySelector('.frame-left').style.background = colors[data.transition.to];
-            document.querySelector('.frame-right').style.background = colors[data.transition.to];
-
-            document.querySelector('.overlay').style.right = '-20%';
-            document.querySelector('.overlay__current-color').style.background = colors[data.transition.from];
-            document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
-
-            document.querySelector('.hero-text__main').style.marginLeft = '30px';
-            document.querySelector('.hero-text__sub').style.marginLeft = '30px';
-            document.querySelector('.hero-text__main').style.opacity = 0;
-            document.querySelector('.hero-text__sub').style.opacity = 0;
-
-            gsap.to('.overlay', {right: '100%', duration: duration, ease: easingOut});
-
-            gsap.to('.hero-text__main', {marginLeft: '0%', opacity: 1, duration: duration, ease: 'power.inOut'});
-            gsap.to('.hero-text__sub', {marginLeft: '0%', opacity: 1, duration: duration, ease: 'power.inOut'});
-
-            setTimeout(next, 750);
+        {
+            from: '/blog',
+            to: '/blog/(.*)',
+            out: function (next) {
+                console.log('Blog to Sub Blog'); 
+                setTimeout(next, 750);
+            },
+            in: function (next) {
+                setTimeout(next, 750);
+            }
+        },
+        {
+            from: '/blog/(.*)/',
+            to: '/blog/(.*)/',
+            out: function (next) {
+                console.log('Sub Blog to Sub Blog'); 
+                setTimeout(next, 750);
+            },
+            in: function (next) {
+                setTimeout(next, 750);
+            }
         }
-    }];
+    ];
     var swup = new Swup({
         plugins: [
             new SwupJsPlugin(options),

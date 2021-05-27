@@ -1,26 +1,16 @@
-<div
-    id="post-list"
->
-    <div>
-        {% if postListHeadline %}
-        <h2
-            data-highlight="primary"
-        >
-            {{ postListHeadline }}
-        </h2>
-        {% endif %}
-        <div>
-            <ol>
-                {% for item in postListItems %}
-                <li>
-                    <a
-                        href="{{ item.url }}"
-                    >
-                        {{ item.data.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ol>
-        </div>
+<div>
+    <div
+        class="post-list-container"
+        id="post-list"
+    >
+        <ul class="grid  grid-basic">
+            {% for item in postListItems %}
+            <li>
+                <a href="{{ item.url }}">
+                    {{ item.data.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
