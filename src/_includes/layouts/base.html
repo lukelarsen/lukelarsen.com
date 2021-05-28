@@ -47,7 +47,7 @@
 <script>
     var easingIn = 'power1.in';
     var easingOut = 'power2.out';
-    var duration = 0.8;
+    var duration = 1;
     var delay = 0.25;
     var colors = {
         '/': '#698A9D',
@@ -64,33 +64,36 @@
             from: '(.*)', // meaning any
             to: '(.*)', // meaning any
             out: function (next, data) {
-                var isBlog = data.transition.from.indexOf('/blog/') === 0;
-                var from = isBlog ? '/blog/' : data.transition.from;
+                var isFromBlog = data.transition.from.indexOf('/blog/') === 0;
+                var from = isFromBlog ? '/blog/' : data.transition.from;
+
                 document.querySelector('.overlay').style.right = '-200%';
                 document.querySelector('.overlay__current-color').style.background = colors[from];
                 document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
 
                 gsap.to('.overlay', {
-                    right: '-20%',
+                    right: '-50%',
                     duration: duration,
                     ease: easingIn
                 });
 
-                setTimeout(next, 800);
+                setTimeout(next, 1000);
             },
             in: function (next, data) {
-                var isBlog = data.transition.from.indexOf('/blog/') === 0;
-                var from = isBlog ? '/blog/' : data.transition.from;
+                var isFromBlog = data.transition.from.indexOf('/blog/') === 0;
+                var isToBlog = data.transition.to.indexOf('/blog/') === 0;
+                var from = isFromBlog ? '/blog/' : data.transition.from;
+                var to = isToBlog ? '/blog/' : data.transition.to;
 
                 document.querySelector('.frame-left').style.background = colors[data.transition.to];
                 document.querySelector('.frame-right').style.background = colors[data.transition.to];
 
-                document.querySelector('.overlay').style.right = '-20%';
+                document.querySelector('.overlay').style.right = '-50%';
                 document.querySelector('.overlay__current-color').style.background = colors[from];
-                document.querySelector('.overlay__next-color').style.background = colors[data.transition.to];
+                document.querySelector('.overlay__next-color').style.background = colors[to];
 
-                document.querySelector('.hero-text__main').style.marginLeft = '30px';
-                document.querySelector('.hero-text__sub').style.marginLeft = '30px';
+                document.querySelector('.hero-text__main').style.marginLeft = '50px';
+                document.querySelector('.hero-text__sub').style.marginLeft = '50px';
                 document.querySelector('.hero-text__main').style.opacity = 0;
                 document.querySelector('.hero-text__sub').style.opacity = 0;
 
@@ -103,41 +106,21 @@
                 gsap.to('.hero-text__main', {
                     marginLeft: '0%',
                     opacity: 1,
+                    delay: delay,
                     duration: duration,
                     ease: 'power.inOut'
                 });
                 gsap.to('.hero-text__sub', {
                     marginLeft: '0%',
                     opacity: 1,
+                    delay: delay,
                     duration: duration,
                     ease: 'power.inOut'
                 });
 
-                setTimeout(next, 800);
+                setTimeout(next, 1250);
             }
         },
-        {
-            from: '/blog',
-            to: '/blog/(.*)',
-            out: function (next) {
-                console.log('Blog to Sub Blog'); 
-                setTimeout(next, 750);
-            },
-            in: function (next) {
-                setTimeout(next, 750);
-            }
-        },
-        {
-            from: '/blog/(.*)/',
-            to: '/blog/(.*)/',
-            out: function (next) {
-                console.log('Sub Blog to Sub Blog'); 
-                setTimeout(next, 750);
-            },
-            in: function (next) {
-                setTimeout(next, 750);
-            }
-        }
     ];
     var swup = new Swup({
         plugins: [

@@ -7,7 +7,7 @@
 
 {# Render post date and any tags that this post has been filed under #}
 {% set pageHeaderSummary %}
-<time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+<time datetime="{{ date | w3DateFilter }}" class="hero-text__sub">{{ date | dateFilter }}</time>
 {% if tags %}
 <p
     class="visually-hidden"
