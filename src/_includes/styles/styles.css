@@ -227,8 +227,8 @@ select {
 
 .skip-link {
     position: absolute;
-    top: var(--s-1);
-    left: var(--s-1);
+    top: calc(var(--s5) + 35px);
+    left: var(--s4);
     color: var(--gray-white);
     z-index: 99;
 }
@@ -904,12 +904,6 @@ nav ul {
     width: 28px;
     height: 25px;
     display: inherit;
-}
-
-.skip-link {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 
