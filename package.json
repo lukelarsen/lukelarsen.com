@@ -23,9 +23,13 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "@swup/js-plugin": "^1.0.4",
     "@swup/preload-plugin": "^1.0.3",
+    "@swup/scroll-plugin": "^1.1.0",
     "clean-css": "^5.1.2",
     "gsap": "^3.6.1",
+    "markdown-it": "^10.0.0",
+    "markdown-it-attrs": "^4.0.0",
     "moment": "^2.29.1",
-    "swup": "^2.0.14"
+    "swup": "^2.0.14",
+    "terser": "^5.7.0"
   }
 }

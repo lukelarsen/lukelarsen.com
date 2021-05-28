@@ -13,3 +13,19 @@ intro:
 ## Headline 2
 
 Bindable Page content here
+
+Another text with attributes {.c-article-section__disclaimer #articleId attr=value attr2="spaced value"}
+
+- ### Title
+    - nested item
+    - nested item
+    - nested item
+  {.side-by-side__single}
+
+- ### Title
+    - nested item
+    - nested item
+    - Stencil Web Components (v2)
+  {.side-by-side__single}
+
+{.side-by-side}

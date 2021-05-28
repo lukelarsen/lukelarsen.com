@@ -25,6 +25,7 @@
  *  LAYOUTS
  *      - Cluster
  *      - Grid
+ *      - Side By Side
  *  NAVS
  *      - Logo
  *      - Header
@@ -850,6 +851,36 @@ p img {
 
 .grid>* a:hover {
     background: rgba(255, 255, 255, 1);
+}
+
+
+/**
+ * ^Side By Side
+ */
+
+.side-by-side{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 818px) {
+.side-by-side{
+    flex-direction: column;
+}
+}
+
+.side-by-side > *{
+    margin-right: var(--s4);
+}
+
+.side-by-side ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-by-side h3{
+    color: initial;
 }
 
 
