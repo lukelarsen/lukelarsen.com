@@ -8,7 +8,7 @@ var colors = {
     '/lightning-league/': '#DDAF1D',
     '/bindable/': '#C6343A',
     '/about/': '#22B2AE',
-    '/blog/': '#666D52',
+    '/blog/': '#6D8C68',
     '/pickleball/': '#000',
 };
 

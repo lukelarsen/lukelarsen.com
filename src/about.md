@@ -6,7 +6,7 @@ color: 'var(--color-about)'
 intro:
     main: 'About Me'
     summary: 'Husband, Dad, Mormon, Biker, Pickleball Player'
-    image: './src/images/page-headers/home.jpg'
+    image: './src/images/page-headers/about.jpg'
     imageAlt: 'Luke Larsen Family'
 ---
 
