@@ -3,13 +3,13 @@ var easingOut = 'power2.out';
 var duration = 1;
 var delay = 0.25;
 var colors = {
-    '/': '#698A9D',
+    '/': '#54535E',
     '/uplynk/': '#CC040B',
     '/lightning-league/': '#DDAF1D',
     '/bindable/': '#C6343A',
     '/about/': '#22B2AE',
-    '/blog/': '#6D8C68',
-    '/pickleball/': '#000',
+    '/blog/': '#9C5D32',
+    '/pickleball/': '#365679',
 };
 
 var options = [
@@ -51,11 +51,9 @@ var options = [
             document.querySelector('.overlay__next-color').style.background =
                 colors[to];
 
-            document.querySelector('.hero-text__main').style.marginLeft =
-                '50px';
-            document.querySelector('.hero-text__sub').style.marginLeft = '50px';
-            document.querySelector('.hero-text__main').style.opacity = 0;
-            document.querySelector('.hero-text__sub').style.opacity = 0;
+            document.querySelector('.hero-text').style.marginLeft =
+                '30px';
+            document.querySelector('.hero-text').style.opacity = 0;
 
             gsap.to('.overlay', {
                 right: '100%',
@@ -63,14 +61,7 @@ var options = [
                 ease: easingOut,
             });
 
-            gsap.to('.hero-text__main', {
-                marginLeft: '0%',
-                opacity: 1,
-                delay: delay,
-                duration: duration,
-                ease: 'power.inOut',
-            });
-            gsap.to('.hero-text__sub', {
+            gsap.to('.hero-text', {
                 marginLeft: '0%',
                 opacity: 1,
                 delay: delay,

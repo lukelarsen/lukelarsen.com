@@ -38,7 +38,7 @@ async function imageHeaderShortcode(src, alt, sizes) {
 // Regular Image Shortcode
 async function imageShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
-        widths: [300, 600, 900, 1200],
+        widths: [300, 600, 900, 1200, 2400],
         formats: ['webp', 'jpg'],
         outputDir: './src/images/processed',
     });

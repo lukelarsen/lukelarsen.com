@@ -6,8 +6,8 @@ color: 'var(--color-pickleball)'
 intro:
     main: 'Pickleball'
     summary: 'My favorite sport.'
-    image: './src/images/page-headers/home.jpg'
-    imageAlt: 'The best sport in the world.'
+    image: './src/images/page-headers/pickleball.jpg'
+    imageAlt: 'My favorite sport.'
 ---
 
 ## Headline 2
