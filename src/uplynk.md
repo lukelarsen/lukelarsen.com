@@ -12,7 +12,7 @@ intro:
 
 ## Uplynk Live Events
 
-Uplynk is a video streaming service. We were purchased by Verizon and I currently work for them full time. One of the services provided by Uplynk is to manage live events. You can create, edit, and manage all your live events. Then, on the Live Event Dashboard, you can run your event. You can tell the event to go to an ad break, come back from the ad break, display slate, and much more. Here, we are going to talk specifically about the dashboard.
+Uplynk is a video streaming service. We were purchased by Verizon and I currently work for them full time. One of the services provided by Uplynk is to manage live events. You can create, edit, and manage all your live events. Then, on the Live Event Dashboard, you can run your event. You can tell the event to go to an ad break, come back from the ad break, display slate, and much more. Here, we are going to talk specifically about the dashboard and how it came to be.
 
 - ### Team Project
     - 1 Project Manager
@@ -37,7 +37,7 @@ Uplynk is a video streaming service. We were purchased by Verizon and I currentl
 There is a lot that goes into running a live event. You need to test the event to make sure your incoming video is working correctly along with monitoring your backup video feeds. You need to switch your event to ads at the correct time and then bring back the live feed. You may need to quickly go to slate if there is an emergency. In short, there are a lot of things that need attention at the same time. We needed to make sure that the operator could easily navigate around the app to do what was needed yet pull their attention to something specific if something was going wrong.
 
 {% image "./src/images/pages/uplynk/sketches.png", "Sketches ofthe Uplynk Dashboard Layout", "100vw" %}<span>Ealry sketches of the layout</span>
-{.media-image}
+{.media-image .media-sketch}
 
 ## Problems & Thought Process
 
@@ -66,7 +66,9 @@ A new internal group was formed to run live events for customers that didn’t w
 ## Lessons Learned
 
 Input from a lot of different places got the Live Event Dashboard launched. While I was the UX person and I wrote all the code for the interface there were many good UX and layout ideas from the project manager and other engineers. It is important to involve them early and often and not shoot down ideas until you hear them in full. There were quite a few conversations I thought were going to lead to a dead-end but once we discussed it turned out to be a great solution.
+{.extra-spacing}
 
 ## Want to work on projects like this?
 
 We are always on the lookout for good engineers, designers, and project managers. If you like what you see here and you are looking for a new gig, [let's talk](mailto:luke@lukelarsen.com).
+{.extra-spacing}
