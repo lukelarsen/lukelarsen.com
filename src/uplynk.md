@@ -29,17 +29,23 @@ Uplynk is a video streaming service. We were purchased by Verizon and I currentl
 
 {.side-by-side}
 
-{% image "./src/images/pages/uplynk/live-event-config.png", "Live Event Configuration Page", "100vw" %}<span>Setting up a live event</span>
+{% image "./src/images/pages/uplynk/live-event-config.png", "Live Event Configuration Page", "100vw" %}
 {.media-image}
+
+Setting up a live event
+{.extra-spacing}
 
 ## Purpose and Goal
 
 There is a lot that goes into running a live event. You need to test the event to make sure your incoming video is working correctly along with monitoring your backup video feeds. You need to switch your event to ads at the correct time and then bring back the live feed. You may need to quickly go to slate if there is an emergency. In short, there are a lot of things that need attention at the same time. We needed to make sure that the operator could easily navigate around the app to do what was needed yet pull their attention to something specific if something was going wrong.
 
-{% image "./src/images/pages/uplynk/sketches.png", "Sketches ofthe Uplynk Dashboard Layout", "100vw" %}<span>Ealry sketches of the layout</span>
+{% image "./src/images/pages/uplynk/sketches.png", "Sketches ofthe Uplynk Dashboard Layout", "100vw" %}
 {.media-image .media-sketch}
 
-## Problems & Thought Process
+Ealry sketches of the layout
+{.extra-spacing}
+
+## Problems and Thought Process
 
 - ### Problems
     - It became apparent that there were two main areas fighting for the user's attention. The first was the health of the event. For a live event, health means that the stream itself is or is not suffering. Most of the time the event will be healthy and the user won’t need to think about it, but if it does change from healthy it needs to be the top priority for the user. The other is the state of the event. Is the event in an ad break? Are we playing the pre-event slate? Are we showing the regular video feed? The user needs to know what state the event is in at all times and be able to switch around quickly.
@@ -51,11 +57,17 @@ There is a lot that goes into running a live event. You need to test the event t
 
 {.side-by-side}
 
-{% image "./src/images/pages/uplynk/live-event-dash-healthy.png", "Live Event Dashboard in a healthy state", "100vw" %}<span>Everything is fine. This event is proceeding nicely.</span>
+{% image "./src/images/pages/uplynk/live-event-dash-healthy.png", "Live Event Dashboard in a healthy state", "100vw" %}
 {.media-image}
 
-{% image "./src/images/pages/uplynk/live-event-dash-critical.png", "Live Event Dashboard in a critical state", "100vw" %}<span>Whoa! I need to switch to a backup feed!</span>
+Everything is fine. This event is proceeding nicely.
+{.extra-spacing}
+
+{% image "./src/images/pages/uplynk/live-event-dash-critical.png", "Live Event Dashboard in a critical state", "100vw" %}
 {.media-image}
+
+Whoa! I need to switch to a backup feed!
+{.extra-spacing}
 
 ## Current Status
 
