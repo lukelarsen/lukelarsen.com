@@ -83,4 +83,3 @@ Input from a lot of different places got the Live Event Dashboard launched. Whil
 ## Want to work on projects like this?
 
 We are always on the lookout for good engineers, designers, and project managers. If you like what you see here and you are looking for a new gig, [let's talk](mailto:luke@lukelarsen.com).
-{.extra-spacing-plus}

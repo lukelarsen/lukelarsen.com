@@ -579,11 +579,6 @@ pre[class*="language-"] {
     margin-bottom: calc(var(--s5) + 7px) !important;
 }
 
-.extra-spacing-plus {
-    margin-bottom: calc(var(--s5) + var(--s5)) !important;
-}
-
-
 
 
 
@@ -1203,6 +1198,10 @@ nav ul {
 
 .wrapper {
     padding: 0 calc(var(--s5) * 1.5);
+}
+
+.wrapper > :last-child{
+    margin-bottom: calc(var(--s5) + var(--s5)) !important;
 }
 
 @media (max-width: 818px) {
