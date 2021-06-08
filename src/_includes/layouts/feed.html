@@ -35,7 +35,11 @@
         {% include "partials/pagination.html" %}
         {% endif %}
     </div>
-    <a style="z-index: 999; position: absolute; margin: 35px;" id="transitionToggle" onclick="toggleTransition()"></a>
+    <a
+        class="transition-toggle"
+        id="transitionToggle"
+        onclick="toggleTransition()"
+    ></a>
     {% headerimage './src/images/page-headers/blog.jpg', 'blog', "100vw" %}
 </div>
 {% endblock %}
