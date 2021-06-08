@@ -1,3 +1,16 @@
+function localStorageGet(key, defaultValue) {
+    var v = window.localStorage.getItem(key);
+    try {
+        v = v !== null ? JSON.parse(v) : defaultValue;
+    } catch (e) {
+        v = defaultValue;
+    }
+    return v;
+}
+function localStorageStore(key, val) {
+    window.localStorage[key] = JSON.stringify(val);
+}
+
 var easingIn = 'power1.in';
 var easingOut = 'power2.out';
 var duration = 1;
@@ -51,8 +64,7 @@ var options = [
             document.querySelector('.overlay__next-color').style.background =
                 colors[to];
 
-            document.querySelector('.hero-text').style.marginLeft =
-                '30px';
+            document.querySelector('.hero-text').style.marginLeft = '30px';
             document.querySelector('.hero-text').style.opacity = 0;
 
             gsap.to('.overlay', {
@@ -69,15 +81,59 @@ var options = [
                 ease: 'power.inOut',
             });
 
+            var transitionState = localStorageGet('transition', true);
+            if (transitionState) {
+                document.getElementById('transitionToggle').innerHTML =
+                    'Turn transitions off';
+            } else {
+                document.getElementById('transitionToggle').innerHTML =
+                    'Turn transitions on';
+            }
+
             setTimeout(next, 1250);
         },
     },
 ];
 
-var swup = new Swup({
-    plugins: [
-        new SwupJsPlugin(options),
-        new SwupPreloadPlugin(),
-        new SwupScrollPlugin()
-    ],
-});
+var transitionCheck = localStorageGet('transition', true);
+var swup = null;
+
+function createSwup() {
+    swup = new Swup({
+        plugins: [
+            new SwupJsPlugin(options),
+            new SwupPreloadPlugin(),
+            new SwupScrollPlugin(),
+        ],
+    });
+}
+
+function destroySwup() {
+    try {
+        swup.destroy();
+    } catch (e) {}
+    swup = null;
+}
+
+if (transitionCheck) {
+    createSwup();
+    document.getElementById('transitionToggle').innerHTML = 'Turn transitions off';
+} else {
+    document.getElementById('transitionToggle').innerHTML = 'Turn transitions on';
+}
+
+function toggleTransition() {
+    var transitionChanged = localStorageGet('transition', true);
+    transitionChanged = !transitionChanged;
+    localStorageStore('transition', transitionChanged);
+
+    destroySwup();
+    if (transitionChanged) {
+        createSwup();
+        document.getElementById('transitionToggle').innerHTML =
+            'Turn transitions off';
+    } else {
+        document.getElementById('transitionToggle').innerHTML =
+            'Turn transitions on';
+    }
+}

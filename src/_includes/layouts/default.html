@@ -16,11 +16,16 @@
         <h4 class="hero-text__sub">{{ intro.summary }}</h4>
     </div>
     <a
-        href="#main-content"
-        class="more"
-    >
-        &darr;&nbsp;&nbsp;More Info&nbsp;&nbsp;&darr;
-    </a>
+        class="transition-toggle"
+        id="transitionToggle"
+        onclick="toggleTransition()"
+    ></a>
+    <div class="more">
+        <a href="#main-content">
+            &darr;&nbsp;&nbsp;More Info&nbsp;&nbsp;&darr;
+        </a>
+    </div>
+
     {% headerimage intro.image, intro.imageAlt, "100vw" %}
 </div>
 <div

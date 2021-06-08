@@ -287,6 +287,7 @@ h2 {
     font-size: var(--s3);
     position: relative;
     margin-bottom: var(--s4);
+    padding-top: var(--s3);
 }
 
 h2::before {
@@ -294,7 +295,7 @@ h2::before {
     position: absolute;
     width: var(--s-4);
     height: calc(var(--s5) - 5px);
-    top: var(--s-5);
+    top: calc(var(--s-5) + var(--s3));
     left: calc(var(--s0) * -1);
     display: block;
     background: var(--color-page);
@@ -579,7 +580,7 @@ pre[class*="language-"] {
 }
 
 .extra-spacing-plus {
-    margin-bottom: calc(var(--s5) + 24px) !important;
+    margin-bottom: calc(var(--s5) + var(--s5)) !important;
 }
 
 
@@ -660,10 +661,33 @@ p img {
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 4;
+}
+
+.more a {
     text-decoration-color: transparent;
     color: var(--gray-white);
     text-shadow: 0px 0px 10px var(--gray-black);
-    z-index: 4;
+}
+
+.more a:hover {
+    text-decoration-color: initial;
+}
+
+.transition-toggle {
+    position: absolute;
+    bottom: var(--s3);
+    left: var(--s4);
+    color: var(--gray-white);
+    font-size: var(--s-1);
+    text-shadow: 0px 0px 10px var(--gray-black);
+    text-decoration-color: transparent;
+    z-index: 5;
+}
+
+.transition-toggle:hover {
+    cursor: pointer;
+    text-decoration-color: initial;
 }
 
 
@@ -877,7 +901,7 @@ p img {
         margin-bottom: var(--s3);
     }
 
-    .side-by-side > * {
+    .side-by-side>* {
         margin-right: 0;
     }
 }
@@ -1205,13 +1229,13 @@ nav ul {
     margin: 0 0 0 calc((var(--s-5) + 14px) * -1);
 }
 
-.wrapper .side-by-side__single .media-image{
+.wrapper .side-by-side__single .media-image {
     border: none;
     padding: 0;
     margin: 0;
 }
 
-.wrapper .side-by-side__single .media-image + p{
+.wrapper .side-by-side__single .media-image+p {
     margin-left: var(--s2);
 }
 
@@ -1223,7 +1247,7 @@ nav ul {
     display: block;
 }
 
-.wrapper .media-image + p {
+.wrapper .media-image+p {
     margin-top: var(--s-4);
     margin-bottom: var(--s3);
     font-family: 'Metropolis Medium Italic', sans-serif;
@@ -1253,11 +1277,11 @@ nav ul {
         width: 300%;
     }
 
-    .wrapper .side-by-side__single .media-image img{
+    .wrapper .side-by-side__single .media-image img {
         width: 100%;
     }
 
-    .wrapper .side-by-side__single .media-image:before{
+    .wrapper .side-by-side__single .media-image:before {
         display: none;
     }
 }

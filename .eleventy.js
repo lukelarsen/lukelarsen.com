@@ -14,8 +14,6 @@ const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 // Filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
-const CleanCSS = require('clean-css');
-const { minify } = require('terser');
 
 // Image Header Shortcode
 async function imageHeaderShortcode(src, alt, sizes) {
@@ -67,23 +65,12 @@ module.exports = (config) => {
     // Add filters
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
-    config.addFilter('cssmin', function (code) {
-        return new CleanCSS({}).minify(code).styles;
-    });
-    config.addNunjucksAsyncFilter('jsmin', async function (code, callback) {
-        try {
-            const minified = await minify(code);
-            callback(null, minified.code);
-        } catch (err) {
-            console.error('Terser error: ', err);
-            // Fail gracefully.
-            callback(null, code);
-        }
-    });
 
     // Set directories to pass through to the dist folder
+    config.addPassthroughCopy({'./src/_includes/styles/styles.min.css': 'styles/styles.css'});
     config.addPassthroughCopy({ './src/images/processed': 'img' });
     config.addPassthroughCopy('./src/fonts/');
+    config.addPassthroughCopy('./src/favicon.ico');
     config.addPassthroughCopy({
         './node_modules/swup/dist/swup.min.js': 'javascript/swup.min.js',
     });

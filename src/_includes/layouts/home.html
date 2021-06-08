@@ -15,11 +15,14 @@
         <h1 class="hero-text__main">{{ intro.main }}</h1>
         <h4 class="hero-text__sub">{{ intro.summary }}</h4>
     </div>
+    <a
+        class="transition-toggle"
+        id="transitionToggle"
+        onclick="toggleTransition()"
+    ></a>
     {% headerimage intro.image, intro.imageAlt, "100vw" %}
 </div>
-<div
-    id="main-content"
->
+<div id="main-content">
     {{ content | safe }}
 </div>
 {% endblock %}

@@ -76,4 +76,4 @@ Callbacks and color property of the c-button component
 ## Lessons Learned
 
 I’ve been primarily a UX and HTML/CSS guy for a long part of my career. I’d get into the javascript when needed and could survive but that’s it. Starting Bindable has pushed me a little more into the javascript world. I’ve learned more about javascript classes, typescript, and with Bindable2 I’ve learned that jsx isn’t super crazy horrible and that it can grow on you. This project has been good for me because I could work a little slower at it to make sure I understood things. I also have been working on this with Joe Ipson and he has taught me a lot. 
-{.extra-spacing}
+{.extra-spacing-plus}

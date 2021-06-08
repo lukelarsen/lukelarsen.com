@@ -17,13 +17,8 @@
         type="application/rss+xml"
         href="{{ site.url }}/feed.xml"
     />
-    {% set css %}
-    {% include "styles/styles.css" %}
-    {% endset %}
-    <style>
-        {{ css | cssmin | safe }}
-    </style>
-
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 </head>
 
 <body>
@@ -46,11 +41,6 @@
 <script src="/javascript/SwupScrollPlugin.min.js"></script>
 <script src="/javascript/gsap.min.js"></script>
 
-{% set js %}
-  {% include "javascript/transitions.js" %}
-{% endset %}
-<script>
-  {{ js | jsmin | safe }}
-</script>
+<script src="/javascript/transitions.js"></script>
 
 </html>

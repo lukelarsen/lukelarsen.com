@@ -86,4 +86,4 @@ Lightning League is a side project of mine. It is currently a work in progress a
 ## Lessons Learned
 
 Backend work for web applications is hard. At first, I wanted to do things custom and learn how to do things myself. I spend a lot of time reading and researching. I quickly became overwhelmed. I friend of mine mentioned Firebase. It seemed a little like cheating but was perfect for me. It handles a lot of work for me and I can focus on building the app and doing the things I know how to do. Firebase does still push me and I have to learn new things but what I do need to learn is within reach were doing everything from scratch was not within reach.
-{.extra-spacing}
+{.extra-spacing-plus}
