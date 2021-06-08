@@ -13,7 +13,7 @@ intro:
 
 ## Lightning League
 
-Lightning League is a web application to run pickleball leagues. What is pickleball? The short answer is one of the fastest-growing sports in the world. [Here is a link](https://usapickleball.org/what-is-pickleball/) to learn more about it if you are curious. Running a sports league is cumbersome. You have to manage sign-ups/players, input scores, contact players, and much more. Lightning League will handle all of that for you and allow you to focus on pickleball and having fun.
+Lightning League is a web application to run pickleball leagues. What is pickleball? The short answer is one of the [fastest-growing sports](https://www.nbcnews.com/better/lifestyle/pickleball-fastest-growing-sport-you-ve-never-heard-ncna992106) in the world. Running a sports league is cumbersome. You have to manage sign-ups/players, input scores, contact players, and much more. Lightning League will handle all of that for you and allow you to focus on running an effective league.
 
 - ### Collaboration Project
     - 1 Designer (Initial Design Ideas)
@@ -36,7 +36,7 @@ List of leagues in a given area
  
 ## Purpose and Goal
 
-A small group of pickleball players and myself would organize a small group to play pickleball each week. We quickly found more and more people wanted to join our group. Things got out of hand quickly. It became hard to tell who was coming, who should play who, and many other problems. I volunteered to make a website to help organize things. Another member of the group, [Adam Record](https://www.adamrecordmusic.com/), also volunteered to get some initial designs done. Since then we have had over 150 players sign up. We’ve used the system to play each week. It has saved us a lot of time. Huzzah! Since then I’ve been putting together a system that will allow organizations to create their own leagues. Then players can search for leagues in their area to get more play in.
+A small group of pickleball players and myself would organize a small group to play pickleball each week. We quickly found more and more people wanted to join our group. Things got out of hand quickly. It became hard to tell who was coming, who should play who, and many other problems. I volunteered to make a website to help organize things. Another member of the group, [Adam Record](https://www.adamrecordmusic.com/), also volunteered to get some initial designs done. Since then, we have had over 150 players sign up. We’ve used the system to play each week. It has saved us a lot of time. Huzzah! To advance the system, I’ve been putting together features that will allow organizations to create their own leagues. Then players can search for leagues in their area to get more play in.
 
 -
     - {% image "./src/images/pages/lightning-league/league-list.png", "Lightning League Mobile List Page", "30vw" %}
@@ -61,7 +61,7 @@ A small group of pickleball players and myself would organize a small group to p
   {.side-by-side__single}
 
 - ### Thought Process
-    - To address the first problem we made the Lightning League web app calculate scoring and player match-ups automatically. An admin can log in and quickly input scores for a given round. It will do the math and organize players based on score. To help us out with the second problem an RSVP system was added. Messages can be sent to players via email or text. Players have to answer and their answers are logged and then groups of four are made automatically based on who is playing for a given round.
+    - To address the first problem we made the Lightning League web app calculate scoring and player match-ups automatically. An admin can log in and quickly input scores for a given round. It will do the math and organize players based on score. To help us out with the second problem, an RSVP system was added. Messages can be sent to players via email or text. Players have to answer and their answers are logged and then groups of four are made automatically based on who is playing for a given round.
   {.side-by-side__single}
 
 {.side-by-side}
@@ -80,9 +80,9 @@ Quickly enter scores after play is over
 
 ## Current Status
 
-Lightning League is a side project of mine. It is currently a work in progress and not available for everyone to see. It has helped us organize ourselves and save us time. Later, it will be opened up for others to start, organize, and run their leagues. I’ve talked to a few local groups that run pickleball leagues and they have provided some valuable feedback on what it would take for them to use Lightning League. Overall Lightning League is much better than the spreadsheets most places are using to run their leagues. 
+Lightning League is a side project of mine. It is currently a work in progress and not available for everyone to see. It has helped us organize ourselves and save us time. Later, it will be opened up for others to start, organize, and run their leagues. I’ve talked to a few local groups that run pickleball leagues and they have provided some valuable feedback on what it would take for them to use Lightning League. Overall Lightning League is much better than the spreadsheets most places are using to run their leagues.
 {.extra-spacing}
 
 ## Lessons Learned
 
-Backend work for web applications is hard. At first, I wanted to do things custom and learn how to do things myself. I spend a lot of time reading and researching. I quickly became overwhelmed. I friend of mine mentioned Firebase. It seemed a little like cheating but was perfect for me. It handles a lot of work for me and I can focus on building the app and doing the things I know how to do. Firebase does still push me and I have to learn new things but what I do need to learn is within reach were doing everything from scratch was not within reach.
+Backend work for web applications is hard. At first, I wanted to do things custom and learn how to do things myself. I spend a lot of time reading and researching. I quickly became overwhelmed. A friend of mine mentioned Firebase. It seemed a little like cheating but was perfect for me. It handles a lot of basic things I need so I can focus on building the app and doing the things I know how to do. Firebase does still push me to learn new things. With Firebase though, what I do need to learn is within reach.
