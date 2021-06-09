@@ -1,11 +1,11 @@
 ---
 title: 'Lightning League'
 layout: 'layouts/default.html'
-metaDesc: 'I am the meta desc for the Lightning League page.'
+metaDesc: 'Lightning League is a web application for running pickleball leagues.'
 color: 'var(--color-project2)'
 intro:
     main: 'Lightning League'
-    summary: 'A web app for running pickleball leagues.'
+    summary: 'A web app for running pickleball leagues'
     heroAlign: 'right'
     image: './src/images/page-headers/lightning-league.jpg'
     imageAlt: 'Lightning League Web App'

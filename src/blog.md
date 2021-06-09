@@ -1,7 +1,7 @@
 ---
 title: 'Blog'
 layout: 'layouts/feed.html'
-metaDesc: 'I am the meta desc for the blog page.'
+metaDesc: 'Luke Larsen Blog'
 color: 'var(--color-blog)'
 pagination:
     data: collections.blog

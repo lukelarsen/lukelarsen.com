@@ -1,18 +1,24 @@
 ---
 title: 'Pickleball'
 layout: 'layouts/default.html'
-metaDesc: 'I am the meta desc for the pickleball page.'
+metaDesc: 'Pickleball is my absolute favorite sport!'
 color: 'var(--color-pickleball)'
 intro:
     main: 'Pickleball'
-    summary: 'My favorite sport.'
+    summary: 'My favorite sport'
     image: './src/images/page-headers/pickleball.jpg'
-    imageAlt: 'My favorite sport.'
+    imageAlt: 'My favorite sport'
 ---
 
 ## What is pickleball?
 
 Pickleball is one of the [fastest-growing sports](https://www.nbcnews.com/better/lifestyle/pickleball-fastest-growing-sport-you-ve-never-heard-ncna992106) in the country and for good reason. It is easy to get started, doesn't require expensive gear (although you can spend a lot), and is tons of fun. I grew up playing tennis and still love the sport. When I heard about pickleball I called it "lazy person tennis." I called it this because you play on a tennis court surface and have a net just like tennis, but the court is much smaller. You play with paddles and use a plastic ball instead of a racket and a rubber tennis ball. I played it once and dismissed it as a lame sport. A few years passed, and some neighbors asked me to come to play. I had just moved to the area and wanted to get to know more people, so off I went. Games didn't last long, and we switched partners around. Everyone was laughing almost constantly. I saw many ohhh and awww moments as great points happened. I was having a lot of fun! Three years have gone by now, and I still play multiple times a week. If you've never played, I encourage you to find a court nearby give it a shot. The pickleball community is extremely welcoming. [Here is an app](https://pickleplay.com/) to help find courts and meet some players. 
+
+{% image "./src/images/pages/pickleball/ground-stroke.jpg", "Forehand Ground Stroke", "100vw" %}
+{.media-image}
+
+Hitting a forehand ground stroke
+{.extra-spacing}
 
 ## Progression
 
@@ -33,7 +39,7 @@ Chasing down a backhand at the Midnight Heist Tournament
     - {% image "./src/images/pages/pickleball/mach6.webp", "Mach6 Pickleball Paddle", "100vw" %}
 {.media-image}
 
-    My paddle of choice.
+    My paddle of choice
   {.side-by-side__single}
 
 {.side-by-side}

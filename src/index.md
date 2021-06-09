@@ -1,7 +1,7 @@
 ---
 title: 'Hello, world'
 layout: 'layouts/home.html'
-metaDesc: 'I am the meta desc for the home page.'
+metaDesc: 'Luke Larsen Online Portfolio and Blog'
 color: 'var(--color-home)'
 intro:
     main: 'Luke Larsen'

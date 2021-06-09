@@ -1,7 +1,7 @@
 ---
 title: 'Tag Archive'
 layout: 'layouts/tags.html'
-metaDesc: 'I am the meta desc for the tags page.'
+metaDesc: 'Blog posts sorted by tag'
 color: 'var(--color-blog)'
 pagination:
     data: collections

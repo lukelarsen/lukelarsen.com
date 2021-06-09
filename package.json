@@ -4,7 +4,8 @@
   "description": "Website for lukelarsen.com",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx eleventy --serve"
+    "start": "npx eleventy --serve",
+    "production": "NODE_ENV=production && NODE_ENV=production eleventy"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@swup/scroll-plugin": "^1.1.0",
     "clean-css": "^5.1.2",
     "gsap": "^3.6.1",
+    "html-minifier": "^4.0.0",
     "markdown-it": "^10.0.0",
     "markdown-it-attrs": "^4.0.0",
     "moment": "^2.29.1",

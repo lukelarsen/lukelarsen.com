@@ -15,6 +15,12 @@ const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
+// Transforms
+const htmlMinTransform = require('./src/transforms/html-min-transform.js');
+
+// Create a helpful production flag
+const isProduction = process.env.NODE_ENV === 'production';
+
 // Image Header Shortcode
 async function imageHeaderShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
@@ -60,14 +66,16 @@ module.exports = (config) => {
 
     // Add Plugins
     config.addPlugin(syntaxHighlight);
-    config.setLibrary("md", markdownLib);
+    config.setLibrary('md', markdownLib);
 
     // Add filters
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
     // Set directories to pass through to the dist folder
-    config.addPassthroughCopy({'./src/_includes/styles/styles.min.css': 'styles/styles.css'});
+    config.addPassthroughCopy({
+        './src/_includes/styles/styles.min.css': 'styles/styles.css',
+    });
     config.addPassthroughCopy({ './src/images/processed': 'img' });
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/favicon.ico');
@@ -90,6 +98,11 @@ module.exports = (config) => {
     config.addPassthroughCopy({
         './node_modules/gsap/dist/gsap.min.js': 'javascript/gsap.min.js',
     });
+
+    // Only minify HTML if we are in production because it slows builds down
+    if (isProduction) {
+        config.addTransform('htmlmin', htmlMinTransform);
+    }
 
     // Returns a collection of blog posts in reverse date order
     config.addCollection('blog', (collection) => {

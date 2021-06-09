@@ -1,11 +1,11 @@
 ---
 title: 'Uplynk'
 layout: 'layouts/default.html'
-metaDesc: 'I am the meta desc for the uplynk page.'
+metaDesc: 'Uplynk Live Event Dashboard - A dashboard for managing and running live events'
 color: 'var(--color-project1)'
 intro:
     main: 'Uplynk'
-    summary: 'A dashboard for managing and running live events.'
+    summary: 'A dashboard for managing and running live events'
     image: './src/images/page-headers/uplynk.jpg'
     imageAlt: 'Uplynk Live Events Dashboard'
 ---
