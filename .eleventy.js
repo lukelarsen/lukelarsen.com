@@ -71,6 +71,7 @@ module.exports = (config) => {
     config.addPassthroughCopy({ './src/images/processed': 'img' });
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/favicon.ico');
+    config.addPassthroughCopy('./src/social-share.jpg');
     config.addPassthroughCopy({
         './node_modules/swup/dist/swup.min.js': 'javascript/swup.min.js',
     });
