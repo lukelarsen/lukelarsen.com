@@ -689,11 +689,15 @@ p img {
     text-decoration-color: initial;
 }
 
+.hero-post-single .transition-toggle{
+    bottom: var(--s0);
+}
+
 @media only screen and (max-width: 818px) {
     .transition-toggle{
         left: auto;
         right: auto;
-        bottom: var(--s-3);
+        bottom: var(--s-3) !important;
     }
 }
 
