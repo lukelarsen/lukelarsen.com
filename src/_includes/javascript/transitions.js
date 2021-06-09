@@ -106,6 +106,7 @@ function createSwup() {
             new SwupScrollPlugin(),
         ],
     });
+    // swup.preloadPages();
 }
 
 function destroySwup() {
