@@ -21,7 +21,7 @@ var colors = {
     '/lightning-league/': '#DDAF1D',
     '/bindable/': '#C6343A',
     '/about/': '#22B2AE',
-    '/blog/': '#9C5D32',
+    '/blog/': '#DA7B3C',
     '/pickleball/': '#365679',
 };
 
