@@ -642,6 +642,16 @@ p img {
     .wrapper :first-child {
         padding-top: 0 !important;
     }
+
+    .hero-post-single .hero-text,
+    .page-tags .hero-text,
+    .page-blog .hero-text{
+        margin-top: unset;
+    }
+
+    .hero-post-single + .wrapper :first-child{
+        padding-top: var(--s2) !important;
+    }
 }
 
 .hero-text.right {
@@ -715,6 +725,11 @@ p img {
         right: auto;
         bottom: var(--s-3) !important;
     }
+}
+
+.page-tags .transition-toggle,
+.page-blog .transition-toggle{
+    display: none;
 }
 
 

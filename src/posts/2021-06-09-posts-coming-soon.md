@@ -1,7 +1,7 @@
 ---
 title: 'Posts Coming Soon'
 date: '2021-06-09'
-tags: ['Coming Soon']
+tags: ['Web']
 color: 'var(--color-blog)'
 ---
 
