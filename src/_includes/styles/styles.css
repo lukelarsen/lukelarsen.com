@@ -654,6 +654,16 @@ p img {
     }
 }
 
+.hero-text__sub{
+    font-size: var(--s0);
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-text__sub:before{
+    display: none;
+}
+
 .hero-text.right {
     align-items: flex-end;
     width: 90%;

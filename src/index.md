@@ -1,5 +1,5 @@
 ---
-title: 'Hello, world'
+title: 'Home'
 layout: 'layouts/home.html'
 metaDesc: "Luke Larsen's Online Portfolio and Blog"
 color: 'var(--color-home)'
