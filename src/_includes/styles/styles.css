@@ -265,7 +265,7 @@ body {
     font-size: var(--s0);
 }
 
-.preload{
+.preload {
     z-index: -1;
 }
 
@@ -633,6 +633,17 @@ p img {
     z-index: 1;
 }
 
+@supports (-webkit-touch-callout: none) {
+    .hero-text {
+        margin-top: -156px;
+    }
+
+    .wrapper,
+    .wrapper :first-child {
+        padding-top: 0 !important;
+    }
+}
+
 .hero-text.right {
     align-items: flex-end;
     width: 90%;
@@ -660,7 +671,7 @@ p img {
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 4;
+    z-index: 1;
 }
 
 .more a {
@@ -681,20 +692,25 @@ p img {
     font-size: var(--s-1);
     text-shadow: 0px 0px 10px var(--gray-black);
     text-decoration-color: transparent;
-    z-index: 5;
+    z-index: 2;
 }
 
 .transition-toggle:hover {
     cursor: pointer;
+    color: var(--gray-white);
     text-decoration-color: initial;
 }
 
-.hero-post-single .transition-toggle{
+.transition-toggle:active {
+    color: var(--gray-white);
+}
+
+.hero-post-single .transition-toggle {
     bottom: var(--s0);
 }
 
 @media only screen and (max-width: 818px) {
-    .transition-toggle{
+    .transition-toggle {
         left: auto;
         right: auto;
         bottom: var(--s-3) !important;
@@ -952,7 +968,7 @@ nav ul {
     width: 100%;
     margin-top: var(--s-5);
     padding: var(--s3) var(--s4);
-    background-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+    background-image: linear-gradient(#000, transparent);
     z-index: 3;
 }
 
@@ -972,6 +988,10 @@ nav ul {
 @media (max-width: 818px) {
     .nav-header .cluster>*>*:nth-child(4) {
         margin-left: calc(var(--space)/ 2);
+    }
+
+    .nav-header {
+        background-image: linear-gradient(#232323, transparent);
     }
 }
 
@@ -1216,7 +1236,7 @@ nav ul {
     padding: 0 calc(var(--s5) * 1.5);
 }
 
-.wrapper > :last-child{
+.wrapper> :last-child {
     margin-bottom: calc(var(--s5) + var(--s5)) !important;
 }
 
@@ -1370,6 +1390,10 @@ nav ul {
 
     .page-blog.hero .hero-text {
         margin-top: var(--s5);
+    }
+
+    .hero-text {
+        margin-left: 0 !important;
     }
 }
 
