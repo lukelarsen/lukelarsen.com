@@ -33,7 +33,7 @@ Chasing down a backhand at the Midnight Heist Tournament
 ## Go Selkirk
 
 -
-    - If you get into the game you'll find that there are many different companies for pickleball gear. I've used quite a few and, my favorite is [Selkirk](selkirk.com). I've used their [S2](https://www.selkirk.com/products/amped-s2), [Invika](https://www.selkirk.com/products/amped-invikta), [Epic](https://www.selkirk.com/products/amped-epic), and currently, the [Mach6](https://www.selkirk.com/products/vanguard-hybrid-mach6) paddle. I love the Mach6 because of the long handle. I use a two-handed backhand so this paddle is perfect for me. Selkirk has always treated me well when I needed to return a paddle. Most of the time I'm playing in the heat and their shirts and hats are great for that. I can't recommend their gear enough.
+    - If you get into the game you'll find that there are many different companies for pickleball gear. I've used quite a few and, my favorite is [Selkirk](selkirk.com). I've used their [S2](https://www.selkirk.com/products/amped-s2), [Invikta](https://www.selkirk.com/products/amped-invikta), [Epic](https://www.selkirk.com/products/amped-epic), and currently, the [Mach6](https://www.selkirk.com/products/vanguard-hybrid-mach6) paddle. I love the Mach6 because of the long handle. I use a two-handed backhand so this paddle is perfect for me. Selkirk has always treated me well when I needed to return a paddle. Most of the time I'm playing in the heat and their shirts and hats are great for that. I can't recommend their gear enough.
 
 -
     - {% image "./src/images/pages/pickleball/mach6.webp", "Mach6 Pickleball Paddle", "100vw" %}
