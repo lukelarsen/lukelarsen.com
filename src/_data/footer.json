@@ -13,6 +13,10 @@
             "url": "/feed.xml"
         },
         {
+            "text": "Resume",
+            "url": "/resume/"
+        },
+        {
             "text": "Email",
             "url": "mailto:luke@lukelarsen.com"
         }

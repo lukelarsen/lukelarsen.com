@@ -23,6 +23,7 @@ var colors = {
     '/about/': '#22B2AE',
     '/blog/': '#DA7B3C',
     '/pickleball/': '#365679',
+    '/resume/': '#6D6D8F',
 };
 
 var options = [
