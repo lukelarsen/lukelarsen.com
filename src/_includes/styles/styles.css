@@ -405,12 +405,8 @@ a:focus {
 
 @supports not (background: paint(something)) {
     a {
-        transition: color 300ms;
-    }
-
-    a:hover,
-    a:focus {
-        color: var(--color-page);
+        transition: text-underline-offset 300ms, color 300ms;
+        text-decoration: underline 0.1em;
     }
 }
 

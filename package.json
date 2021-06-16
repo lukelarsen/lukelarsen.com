@@ -1,6 +1,6 @@
 {
   "name": "lukelarsen.com",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Website for lukelarsen.com",
   "main": ".eleventy.js",
   "scripts": {
