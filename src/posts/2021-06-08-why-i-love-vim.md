@@ -1,7 +1,7 @@
 ---
 title: 'Why I love Vim'
 date: '2021-06-08'
-tags: ['Web']
+tags: ['vim']
 color: 'var(--color-blog)'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'New Website'
 date: '2021-06-02'
-tags: ['Web']
+tags: ['web-dev']
 color: 'var(--color-blog)'
 ---
 
