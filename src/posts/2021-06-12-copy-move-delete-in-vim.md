@@ -9,7 +9,7 @@ color: 'var(--color-blog)'
 
 The copy, move, and delete commands in Vim routine. I usually move my cursor to the line I want to run the command on, then type the command. 
 
-```
+``` vim
 dd
 yy
 ```
@@ -22,13 +22,13 @@ What I'd like to get better at is running these commands without moving my curso
 
 Without moving your cursor you can run the copy command to target a line and place it below your current cursor. This is great because you don't have to move your cursor down to the line you want to yank it. This command will copy line 20 and paste it below your cursor.
 
-```
+``` vim
 :20co
-``
+```
 
 `:t` is an alias for `:co` so you can shorten it to:
 
-```
+``` vim
 :20t
 ```
 
@@ -36,7 +36,7 @@ Without moving your cursor you can run the copy command to target a line and pla
 
 If you want to take line 20 out of where it is now and place it at line 10 you can run this:
 
-```
+``` vim
 :20m10
 ```
 
@@ -44,7 +44,7 @@ If you want to take line 20 out of where it is now and place it at line 10 you c
 
 I can see myself using this one the most. If my cursor is on line 3 and I want to delete lines 7 through 10 I can run:
 
-```
+``` vim
 7,10d
 ```
 
