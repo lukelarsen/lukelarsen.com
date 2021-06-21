@@ -312,16 +312,11 @@ h2::before {
     }
 
     h2::before {
-        /* width: var(--s-5);
-        height: var(--s4);
-        left: calc(var(--s-1) * -1); */
-
         width: calc(var(--s5) + 15px);
         height: var(--s-5);
         top: unset;
         left: 0;
         bottom: 0;
-
     }
 }
 
