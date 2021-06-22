@@ -39,7 +39,21 @@ Chasing down a backhand at the Midnight Heist Tournament
     - {% image "./src/images/pages/pickleball/mach6.webp", "Mach6 Pickleball Paddle", "100vw" %}
 {.media-image}
 
-    My paddle of choice
+    Selkirk Mach6 Hybrid is my paddle of choice
   {.side-by-side__single}
 
 {.side-by-side}
+
+## Tournament History
+
+- 05/11/2021 PLS Fundraiser Tournament - Men's Doubles 5.0 🥈
+- 04/21/2021 Paint Your Courts Round Robin Fundraising Tournament - Men's Doubles 4.5 🥇
+- 10/21/2020 PLS Fundraiser Tournament - Men's Doubles 5.0
+- 10/06/2020 Fall Brawl - Men's Doubles 5.0
+- 07/31/2020 Midnight Pickleball Heist - 5.0
+- 02/05/2020 Rock n Roll Triples Pickleball Tournament - Men's Doubles 4.5 
+- 10/08/2019 Fall Brawl - Men's Doubles 4.5 🥈
+- 09/24/2019 Las Vegas Open - Men's Doubles 4.5
+- 02/06/2019 Rock n Roll Triples Pickleball Tournament - Men's Doubles 4.5 🥇
+- 11/14/2018 Utah State Round Robin Championships - Mixed Doubles 4.5 🥇
+- 09/27/2018 Las Vegas Open - Men's Doubles 4.5 🥉
