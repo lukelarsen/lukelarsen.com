@@ -1,5 +1,6 @@
 ---
-title: 'Me'
+title: 'About'
+moreText: 'me'
 layout: 'layouts/default.html'
 metaDesc: 'Who is Luke Larsen'
 color: 'var(--color-about)'

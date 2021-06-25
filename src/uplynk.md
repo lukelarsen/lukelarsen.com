@@ -1,5 +1,6 @@
 ---
 title: 'Uplynk'
+moreText: 'Uplynk'
 layout: 'layouts/default.html'
 metaDesc: 'Uplynk Live Event Dashboard - A dashboard for managing and running live events'
 color: 'var(--color-project1)'

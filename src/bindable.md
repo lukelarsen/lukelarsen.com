@@ -1,5 +1,6 @@
 ---
 title: 'Bindable'
+moreText: 'Bindable'
 layout: 'layouts/default.html'
 metaDesc: 'Bindable is a themeable design system'
 color: 'var(--color-project3)'

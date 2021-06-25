@@ -1,5 +1,6 @@
 ---
 title: 'Lightning League'
+moreText: 'Lightning League'
 layout: 'layouts/default.html'
 metaDesc: 'Lightning League is a web application for running pickleball leagues.'
 color: 'var(--color-project2)'

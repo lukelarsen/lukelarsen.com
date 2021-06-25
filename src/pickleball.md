@@ -1,5 +1,6 @@
 ---
 title: 'Pickleball'
+moreText: 'pickleball'
 layout: 'layouts/default.html'
 metaDesc: 'Pickleball is my absolute favorite sport!'
 color: 'var(--color-pickleball)'
