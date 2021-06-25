@@ -688,7 +688,6 @@ p img {
 }
 
 .more a {
-    text-decoration-color: transparent;
     color: var(--gray-white);
     text-shadow: 0px 0px 10px var(--gray-black);
 }
