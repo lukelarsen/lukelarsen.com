@@ -8,7 +8,7 @@ color: 'var(--color-blog)'
 ## Gap Background
 Flexbox has supported gap as a way to add spacing between flexbox items for a while. We didn't have support in Safari for the gap property until just recently. Safari 14.1 now supports it! What this means is that our CSS can get cleaner!
 
-## What's it look like
+## What does it look like
 
 The syntax is super simple. The great thing about gap is that it handles wrapping. Your flex container will wrap the children, and the spacing will be nice and orderly.
 
