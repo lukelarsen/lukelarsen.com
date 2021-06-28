@@ -1,5 +1,6 @@
 ---
 title: 'Resume'
+moreText: 'me'
 layout: 'layouts/default.html'
 metaDesc: 'My Job History and Education'
 color: 'var(--color-resume)'
