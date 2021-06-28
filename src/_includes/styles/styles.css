@@ -589,6 +589,18 @@ p img {
     display: inline-block;
 }
 
+.image-list picture,
+.image-list img{
+    display: inline;
+}
+
+.image-list img{
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
+
 
 
 
