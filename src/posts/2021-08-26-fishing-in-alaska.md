@@ -26,7 +26,7 @@ River fishing was my favorite
 
 ## Deep Sea Fishing
 🤢🤢🤢🤢🤢
-That's how this part a of the trip was for me. I was so sick the entire time. I did catch two halibut, two rockfish, and one cod. I don't remember much of it. I was just so sick. My dad, brother, and bro-in-law weren't nearly as sick. 
+That's how this part of the trip was for me. I was so sick the entire time. I did catch two halibut, two rockfish, and one cod. I don't remember much of it. I was just so sick. My dad, brother, and bro-in-law weren't nearly as sick. 
 
 {% image "./src/images/posts/2021-08-26-fishing-in-alaska/ocean.jpg", "Deep Sea Fishing", "100vw" %}
 {.media-image}
