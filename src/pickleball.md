@@ -47,6 +47,9 @@ Chasing down a backhand at the Midnight Heist Tournament
 
 ## Tournament History
 
+- 02/04/2022 Rock n' Roll Triples - Men's Doubles 5.0 {% image "./src/images/pages/pickleball/third.png", "Third Place" %}
+- 11/19/2021 Utah State Round Robin Championships - Men's Doubles 5.0 {% image "./src/images/pages/pickleball/first.png", "First Place" %}
+- 07/30/2021 Midnight Heist - Men's Doubles 5.0 {% image "./src/images/pages/pickleball/second.png", "Second Place" %}
 - 05/11/2021 PLS Fundraiser Tournament - Men's Doubles 5.0 {% image "./src/images/pages/pickleball/second.png", "Second Place" %}
 - 04/21/2021 Paint Your Courts Round Robin Fundraising Tournament - Men's Doubles 4.5 {% image "./src/images/pages/pickleball/first.png", "First Place" %}
 - 10/21/2020 PLS Fundraiser Tournament - Men's Doubles 5.0
