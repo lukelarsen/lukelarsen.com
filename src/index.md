@@ -12,7 +12,7 @@ intro:
 ---
 
 ## Hi, I'm Luke Larsen
-I'm a UX designer and front-end developer based in Utah. I currently work for [Verizon Media](https://www.verizonmedia.com/) where I design and build interfaces that allow our customers to manage their video content. I have planned and built out entirely new features while also maintaining existing areas in the system. I co-started a [component library ](/bindable) that powers the system and keeps the team organized.
+I'm a UX Leed Engineer based in Utah. I currently work for [PlutoTV](https://www.pluto.tv/) where I design and build interfaces that allow our internal teams to schedule content, and manage channels. I have planned and built out entirely new features while also maintaining existing areas in the system. I co-started a component library that powers the system and keeps the team organized.
 
 I enjoy planning out complex problems and turning those problems into an easy-to-use experience. I equally enjoy developing that design into the codebase. I find enjoyment in making sure the interface works just right in all browser sizes and devices. I love CSS and building complex layouts that are fluid. 
 
