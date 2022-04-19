@@ -80,7 +80,3 @@ A new internal group was formed to run live events for customers that couldn't r
 
 Input from a lot of different places got the Live Event Dashboard launched. While I was the UX person and I wrote all the code for the interface there were many good UX and layout ideas from the project manager and other engineers. It is important to involve them early and often and not dismiss ideas until you hear them in full. There were quite a few conversations I thought were going to lead to a dead-end, but once discussed, turned out to be a great solution.
 {.extra-spacing}
-
-## Want to work on projects like this?
-
-We are always on the lookout for good engineers, designers, and project managers. If you like what you see here and you are looking for a new gig, [let's talk](mailto:luke@lukelarsen.com).

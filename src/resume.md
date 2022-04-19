@@ -23,9 +23,22 @@ Dixie State University, St. George, Utah - May 2003
 
 ## Professional Experience
 
+### Lead UX Engineer
+
+PlutoTV, St. George, Utah - 2021 – Present
+
+- Create a component library from scratch for multiple applications and teams to use
+- Maintain the component library by fixing bugs and adding new features as teams need updates
+- Wireframe, storyboard, and plan features for a large scale web application
+- Create, enforce, and maintain brand styles guides
+- Conducted User Tests on proposed designs
+- Produced high fidelity application designs
+- Directed and crafted the user experience
+- Produced fully responsive and browser tested front-end code
+
 ### Sr. UX Designer & Front-End Dev
 
-Verizon Digital Media Services, Salt Lake City, Utah - 2015 – Present
+Verizon Digital Media Services, Salt Lake City, Utah - 2015 – 2021
 
 - Wireframe, storyboard, and plan features for a large scale web application
 - Create, enforce, and maintain brand styles guides
