@@ -36,7 +36,7 @@ I knew I wanted to build a static site and not use some CMS. I tested a few stat
 Lighthouse is a service that will rate a website on performance, accessibility, best practices, and SEO. I worked hard to get this score up. Yay!
 
 {% image "./src/images/posts/2021-06-02-new-website/lighthouse.png", "Lighthouse Score", "50vw" %}
-{.media-image}
+{.media-image .media-image-caption .media-image-small}
 
 Huzzah!
 {.extra-spacing}

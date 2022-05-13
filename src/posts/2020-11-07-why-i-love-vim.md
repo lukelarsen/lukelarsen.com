@@ -18,7 +18,7 @@ Since then I have read books, watched videos, re-written my .vimrc over and over
 I have been using [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) in VS Code because of this [beautiful VS Code theme](https://github.com/robb0wen/synthwave-vscode). So if you have a theme or a feature that you can't do without, install the VSCodeVim.
 
 {% image "./src/images/posts/2020-11-07-why-i-love-vim/synthwave.jpg", "Synthwave VSCode Theme", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Stuff even glows!
 {.extra-spacing}

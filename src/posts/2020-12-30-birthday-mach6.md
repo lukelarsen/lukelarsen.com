@@ -15,7 +15,7 @@ I must admit that when it comes to birthday presents for myself and for my wife 
 When I compare the Power and Hybrid versions, the Power model does give a lot more power. It's fun to see all the extra oomph you get by just switching paddles. I'm a little worried about the touch game, but I'm going to stick with it to see if I can get accustomed to the paddle.
 
 {% image "./src/images/posts/2020-12-30-birthday-mach6/mach6.jpg", "The Mach6 Power", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Best birthday present ever
 {.extra-spacing}

@@ -18,7 +18,7 @@ I’m a UX Designer and UI Engineer living in beautiful southern Utah. I enjoy d
 When I’m not playing around with interfaces you can find me hanging out with my kids, on the Pickleball court, or spinning homemade ice cream.
 
 {% image "./src/images/pages/about/look.jpg", "Larsen Family, Look!", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 My clan looking at something amazing
 {.extra-spacing}

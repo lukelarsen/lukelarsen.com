@@ -12,7 +12,7 @@ The Midnight Heist is a pickleball tournament run by the city of St. George. Dur
 I partnered up with Joe Zaleski. The tournament was a relaxing time with friends because we knew everyone in the bracket. There were only four teams. The format was a round-robin and then we were seeded for a single-elimination tournament. We went undefeated in the round-robin phase. In the tournament part, we played Jason Weidman and Jason Ayotte in the final. They ended up taking us down in that match-up. There were some close games and it was a lot of fun. 
 
 {% image "./src/images/posts/2021-07-30-midnight-heist-tournament/medals.jpg", "Podium Photo", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Good times with pickleball friends
 {.extra-spacing}

@@ -30,7 +30,7 @@ Lightning League is a web application to run pickleball leagues. What is pickleb
 {.side-by-side}
 
 {% image "./src/images/pages/lightning-league/lightningleague-leagues.png", "Lightning League Leagues Page", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 List of leagues in a given area
 {.extra-spacing}
@@ -68,13 +68,13 @@ A small group of pickleball players and myself would organize a small group to p
 {.side-by-side}
 
 {% image "./src/images/pages/lightning-league/lightningleague-rsvp.png", "Lightning League RSVP Screen", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Find out who has RSVP'd so far
 {.extra-spacing}
 
 {% image "./src/images/pages/lightning-league/lightningleague-enter-scores.png", "Lightning League Entering Scores", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Quickly enter scores after play is over
 {.extra-spacing}

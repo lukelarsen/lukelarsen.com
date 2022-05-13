@@ -30,7 +30,7 @@ Bindable is a themeable design system built in [Aurelia JS](https://aurelia.io/)
 {.side-by-side}
 
 {% image "./src/images/pages/bindable/bindable-tokens.png", "Bindable Color Tokens", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Color tokens that come with Bindable
 {.extra-spacing}
@@ -40,7 +40,7 @@ Color tokens that come with Bindable
 While working on the [Uplynk project](/uplynk) we noticed that engineers would often re-build something that was already in a different part of the application. A small example of this might be spacing between two buttons. Some new CSS would be added, yet classes were already in place for this. Design systems can help fix problems like this. We set out to build one that would work for our use cases and allow everyone on the team to help build UIs without duplicating unnecessary code.
 
 {% image "./src/images/pages/bindable/bindable-logo-sketches.png", "Bindable Logo Ideas", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Some Bindable logo sketches
 {.extra-spacing}
@@ -58,13 +58,13 @@ Some Bindable logo sketches
 {.side-by-side}
 
 {% image "./src/images/pages/bindable/bindable-l-grid.png", "Bindable l-grid layout", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Example of the gap property of the l-grid layout
 {.extra-spacing}
 
 {% image "./src/images/pages/bindable/bindable-c-button.png", "Bindable c-button component", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Callbacks and color property of the c-button component
 {.extra-spacing}

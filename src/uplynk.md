@@ -31,7 +31,7 @@ Uplynk is a video streaming service. We were purchased by Verizon a few years ba
 {.side-by-side}
 
 {% image "./src/images/pages/uplynk/live-event-config.png", "Live Event Configuration Page", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Setting up a live event
 {.extra-spacing}
@@ -41,7 +41,7 @@ Setting up a live event
 There is a lot that goes into running a live event. You need to test your incoming video feed to make sure it is working correctly. You need to switch your event to show ads at the correct time, and then bring back the live feed when ready. You may need to quickly go to slate if there is an emergency. In short, there are a lot of things that need the operator's attention at any given time. We needed to make sure that the operator could easily navigate around the app to do what was needed, yet pull their attention to something specific if something was going wrong.
 
 {% image "./src/images/pages/uplynk/sketches.png", "Sketches ofthe Uplynk Dashboard Layout", "100vw" %}
-{.media-image .media-sketch}
+{.media-image .media-image-caption .media-sketch}
 
 Ealry sketches of the layout
 {.extra-spacing}
@@ -59,13 +59,13 @@ Ealry sketches of the layout
 {.side-by-side}
 
 {% image "./src/images/pages/uplynk/live-event-dash-healthy.png", "Live Event Dashboard in a healthy state", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Everything is fine. This event is proceeding nicely.
 {.extra-spacing}
 
 {% image "./src/images/pages/uplynk/live-event-dash-critical.png", "Live Event Dashboard in a critical state", "100vw" %}
-{.media-image}
+{.media-image .media-image-caption}
 
 Whoa! I need to switch to a backup feed!
 {.extra-spacing}
