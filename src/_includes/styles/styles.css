@@ -387,7 +387,7 @@ blockquote p {
 
 a {
     color: inherit;
-    text-underline-offset: var(--offset, 0.1em);
+    /* text-underline-offset: var(--offset, 0.1em); */
     text-decoration: underline 0.15em;
     transition: --offset 300ms, text-decoration-color 300ms;
 }
